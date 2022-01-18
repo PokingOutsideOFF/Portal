@@ -1,0 +1,95 @@
+.header
+{ 
+  display: inline-block;
+  font-family: 'M PLUS Code Latin',sans-serif;
+  color: black;
+  font-size: 50px;
+  font-weight:bold;
+  padding-left: 450px ; 
+  padding-right: 250px;
+}
+
+.button 
+{
+  background-color: #45B3E6;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-family: "Praise";
+  margin: 4px 2px;
+  cursor:pointer;
+  border-radius: 50px;   
+}
+
+.button:hover
+{
+  background-color: #189AB4;
+}
+
+.topnav 
+{
+  overflow: hidden;
+  background-color: #45B3E6;
+}
+
+.topnav a 
+{
+  float: left;
+  display:block;
+  color: black;
+  text-align: center;
+  padding: 10px 30px; 
+  padding-right: 100px ;
+  padding-left: 100px;
+  text-decoration:none;
+}
+
+.topnav a:hover 
+{
+  background-color: #189AB4;
+  color: black;
+}
+
+.intro::after
+{ 
+  content: " " ;
+
+} 
+.column-left
+{   
+  font: 200 18px/28px artifakt-element,sans-serif;
+  /* font-family: artifakt-element,sans-serif; */
+  background-color: rgba(255, 255, 255, 0.651);
+  color: black;
+  /*margin-top: 20px;*/
+  margin-right: 100px;
+  float: left;
+  width: 65%;
+  /*border-radius: 50px*/
+}
+.column-right
+{
+  font: 200 18px/28px artifakt-element,sans-serif;
+  background-color: #75E6DA;
+  color:black;
+  margin-top: 20px;
+  float: left;
+  width: 23%;
+  border-radius: 50px;
+}
+h1
+{   
+  text-align: center;
+}
+body
+{   
+  width: auto;
+  /* background-image: url("BackImage6.jpg"); */
+  /* background-color: #CAD5E2; */
+  background-repeat: no-repeat;
+  background-size: cover;   
+}

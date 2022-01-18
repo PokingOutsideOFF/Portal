@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Tol.css">
+        <title>Registration Page</title>
+    </head>    
+<body>
+    <img src="C:\Users\Asus\College study material\Second Year\Semester 3\Mini Project\Code\Backimage.jpg"  height="100px" width="100px"/>
+    <div class="box">
+        <div class="bor">
+            <h1 style="text-align: center;">Register</h1>
+            <form onsubmit="return verifyInfo()" action = "Registerconnect.php" method = "post">
+            <label for="Email Id" >Email - Id  :</label>
+            <input type="text" id="Email Id" name="email"><br><br>
+            <label for="Username" >Username:</label>
+            <input type="text" id="Username" name="Username"><br><br>
+            <label for="Password" >Password :</label>
+            <input type="password" id="Password" name="Password"><br><br>
+            <input type="checkbox" onclick="Toggle()">
+            <b>Show password</b>
+            <br>
+            <div class="Input">
+                    <div class = "button"><input type = "submit" value = "Register"></div> 
+        </div>
+    </form>
+    </div>
+<script>
+    function verifyInfo()
+    {
+        var str = new String(document.getElementById("Password").value);
+        var str1 = new String(document.getElementById("Email Id").value);
+        var bool = str.match(/\d/);
+        var bool1 = str.match(/[A-Z]/);
+        var end = str1.substr(-10);
+        var bool2 = str.match(/(@|#)/);
+        if (end != "@gmail.com")
+        {
+            window.alert("Enter proper email id.");
+            return false;
+        }
+
+        if (str.length < 8) 
+        {
+            window.alert("Password length must be at least 8 characters.");
+            return false;
+        }
+
+        if (str.length > 15)
+        {
+            window.alert("Password length must not exceed 15 characters.");
+            return false;
+        }
+       
+        if (!bool)
+        {
+            window.alert("Password must contain at least one digit.");
+            return false;
+        }
+        
+        if (!bool1)
+        {
+            window.alert("Password must contain at least one uppercase alphabet.");
+            return false;
+        }
+
+        if (!bool2)
+        {
+            window.alert("Password must contain at least one special character.");
+            return false;
+        }
+    }
+    function Toggle() 
+    {
+            var temp = document.getElementById("Password");
+            if (temp.type === "password") {
+                temp.type = "text";
+            }
+            else {
+                temp.type = "password";
+            }
+        }
+</script>
+</body>
+</html>
