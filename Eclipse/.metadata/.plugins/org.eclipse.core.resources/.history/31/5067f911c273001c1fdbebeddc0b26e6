@@ -1,0 +1,20 @@
+package regexgroups;
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+public class RegExGroups {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		String date;
+		Pattern dateP=Pattern.compile("([0-9]{2})/([0-9]{2})/([0-9]{4})");
+		date=getDate(in,dateP);
+		in.close();
+	}
+	static String getDate(Scanner in,Pattern dateP) {
+		System.out.print("Enter date: ");
+		return in.nextLine();
+	}
+	
+
+}

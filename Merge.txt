@@ -1,0 +1,64 @@
+#include <stdio.h>
+#define size 5
+int arr[size];
+
+void merge(int a[],int beg,int mid,int end){
+    int temp[size];
+    int i=beg,j=mid+1,index=beg;
+    while((i<=mid) && (j<=end)){
+        if(a[i]<a[j]){
+            temp[index]=a[i];
+            i++;
+        }
+        else{
+            temp[index]=a[j];
+            j++;
+        }
+        index++;
+    }
+    
+    if(i>mid){
+        while(j<=end){
+            temp[index]=a[j];
+            index++;j++;
+        }
+    }
+    else{
+        while(i<=mid){
+            temp[index]=arr[i];
+            index++;i++;
+        }
+    }
+    
+    int k=0;
+    while(k<index){
+        arr[k]=temp[k];
+        k++;
+    }
+}
+
+void mergeSort(int a[],int beg,int end){
+    if(beg<end){
+       int mid=(beg+end)/2;
+       mergeSort(a,beg,mid);
+       mergeSort(a,mid+1,end);
+       merge(a,beg,mid,end);
+    }
+}
+
+int main()
+{
+    printf("Enter elements of array: ");
+    int i=0;
+    while(i<size){
+        scanf("%d ",&arr[i]);
+        i++;
+    }
+    mergeSort(arr,0,size-1);
+    
+    i=0;
+    while(i<size){
+        printf("%d ",arr[i]);
+        i++;
+    }
+}

@@ -1,0 +1,17 @@
+
+Menu:
+1.Create wallet
+Name
+Income(user defined)
+Month Date using util
+
+2.Add Expense
+
+3.Delete Expense
+
+4.Display Expense
+
+5.Exit
+
+									
+																		
