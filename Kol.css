@@ -1,3 +1,4 @@
+
 .header
 { 
   display: inline-block;
@@ -7,6 +8,7 @@
   font-weight:bold;
   padding-left: 450px ; 
   padding-right: 250px;
+  
 }
 
 .button 
@@ -28,6 +30,7 @@
 .button:hover
 {
   background-color: #189AB4;
+    color: white;
 }
 
 .topnav 
@@ -37,7 +40,7 @@
 }
 
 .topnav a 
-{
+{ font-size: 25px;
   float: left;
   display:block;
   color: black;
@@ -51,8 +54,14 @@
 .topnav a:hover 
 {
   background-color: #189AB4;
-  color: black;
+  color: white;
 }
+
+.topnav a.active {
+  background-color:#04AA6D;
+  color: white;
+}
+
 
 .intro::after
 { 
@@ -62,14 +71,13 @@
 .column-left
 {   
   font: 200 18px/28px artifakt-element,sans-serif;
-  /* font-family: artifakt-element,sans-serif; */
   background-color: rgba(255, 255, 255, 0.651);
   color: black;
-  /*margin-top: 20px;*/
+  margin-top: 20px;
   margin-right: 100px;
   float: left;
   width: 65%;
-  /*border-radius: 50px*/
+  border-radius: 50px
 }
 .column-right
 {
@@ -79,7 +87,7 @@
   margin-top: 20px;
   float: left;
   width: 23%;
-  border-radius: 50px;
+  border-radius: 50px
 }
 h1
 {   
@@ -88,8 +96,10 @@ h1
 body
 {   
   width: auto;
-  /* background-image: url("BackImage6.jpg"); */
-  /* background-color: #CAD5E2; */
   background-repeat: no-repeat;
   background-size: cover;   
 }
+
+sup{
+  vertical-align: top; font-size: 0.6em;
+} 
