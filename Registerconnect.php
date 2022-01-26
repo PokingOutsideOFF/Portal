@@ -22,6 +22,6 @@ catch(Exception $e)
     echo $e;
 }
 ?>
-Click here for <a href="login.html">login page.</a>
+<br>Click here for <a href="login.html">login page.</a>
 </body>
 </html>
