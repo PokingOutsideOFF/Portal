@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="import java.nio.file.Path;"/>
 		<list key="findhistory">
+			<item value="import java.nio.file.Path;"/>
 			<item value="static AbstractBAnkaccount"/>
 		</list>
 		<list key="replacehistory">

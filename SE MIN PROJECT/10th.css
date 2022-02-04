@@ -96,12 +96,12 @@
     font: 200 18px/28px artifakt-element,sans-serif;
 }
 
-
+/* 
 .sticky {
     position: sticky;
     top: 0;
     width: 100%
-}
+} */
 
 sup{
     vertical-align: top; font-size: 0.6em;

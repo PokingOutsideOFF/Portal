@@ -7,8 +7,8 @@ public class SortExample {
 		displayElements(numbers);
 		sequentialSearch(numbers,13);
 		sequentialSearch(numbers,7);
-		//selectionSort(numbers);
-		//displayElements(numbers);
+		selectionSort(numbers);
+		displayElements(numbers);
 		System.out.print("\n");
 		bubbleSort(numbers);
 		displayElements(numbers);
