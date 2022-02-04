@@ -4,25 +4,22 @@
         <title>Registration Page</title>
     </head>    
 <body>
-    
     <img src="BackImage.jpg"  height="100px" width="100px"/>
     <div class="box">
         <div class="bor">
             <h1 style="text-align: center;">Register</h1>
-            <form onsubmit="return verifyInfo()">
+            <form onsubmit="return verifyInfo()" action = "Registerconnect.php" method = "post">
             <label for="Email Id" >Email - Id  :</label>
-            <input type="text" id="Email Id"><br><br>
+            <input type="text" id="Email Id" name="email"><br><br>
             <label for="Username" >Username:</label>
-            <input type="text" id="Username"><br><br>
+            <input type="text" id="Username" name="Username"><br><br>
             <label for="Password" >Password :</label>
-            <input type="password" id="Password"><br><br>
+            <input type="password" id="Password" name="Password"><br><br>
             <input type="checkbox" onclick="Toggle()">
             <b>Show password</b>
-            <br><br>
+            <br>
             <div class="Input">
-                    <button class = "button" formaction="Homepage.html">Register
-                    </button>
-            </div>
+                    <div class = "button"><input type = "submit" value = "Register"></div> 
         </div>
     </form>
     </div>
@@ -34,7 +31,7 @@
         var bool = str.match(/\d/);
         var bool1 = str.match(/[A-Z]/);
         var end = str1.substr(-10);
-        var bool2 = str1.match(/(@|#)/);
+        var bool2 = str.match(/(@|#)/);
         if (end != "@gmail.com")
         {
             window.alert("Enter proper email id.");
