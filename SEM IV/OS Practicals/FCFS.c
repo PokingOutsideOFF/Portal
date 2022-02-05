@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+
 void findWaitingTime(int processes[], int n, 
                           int bt[], int wt[])
 {
@@ -41,12 +42,18 @@ void findavgTime( int processes[], int n, int bt[])
 }
    
 int main()
-{
-    int processes[] = { 1, 2, 3, 4};
-    int n = sizeof processes / sizeof processes[0];
+{   int size,i;
+    printf("Enter the number of processes ");
+    scanf("%d",&size);
+    int processes[size],burst_time[size];
+    printf("\nConsidering Arrival time for all the processes to be zero\n");
+    printf("Enter the burst time for processes:\n");
+    for(i=0;i<size;i++){
+        printf("P%d:",i+1);
+        scanf("%d",&burst_time[i]);
+        printf("\n");
+    }
    
-    int  burst_time[] = {2, 6, 4, 9, 12};
-   
-    findavgTime(processes, n,  burst_time);
+    findavgTime(processes, size,  burst_time);
     return 0;
 }
