@@ -4,8 +4,8 @@
         <title>Login Page</title>
     </head>    
 
-<body>
-    <img src="C:\Users\Asus\College study material\Second Year\Semester 3\Mini Project\Code\Backimage.jpg"  height="100px" width="100px"/>
+<body style="background-color: #2B6AD0;">
+    <img src="BackImage.jpg"  height="100px" width="100px"/>
     <div class="box">
         <div class="bor">
             <form action="Loginconnect.php" method="post">
@@ -15,13 +15,26 @@
             <label for="Password">Password :</label>
             <input type="password" id="Password" name="password"><br><br>
             <br>
-            <div class="Input">
-            <div class="button" >
-                <input type = "submit" value="Log In">
-            </div>
-            </div>
+            <input type="checkbox" onclick="Toggle()">
+            <b>Show password</b>
+            <br>
+            <button class="Register-btn" type="submit">Login</button>
         </form>
         </div>
     </div>
+<script>
+     function Toggle() 
+    {
+        var temp = document.getElementById("Password");
+        if (temp.type === "password") 
+        {
+            temp.type = "text";
+        }
+        else 
+        {
+            temp.type = "password";
+        }
+    }
+</script>    
 </body>
 </html>>
