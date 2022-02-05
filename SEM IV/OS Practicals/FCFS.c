@@ -1,8 +1,7 @@
 #include<stdio.h>
 
 
-void findWaitingTime(int processes[], int n, 
-                          int bt[], int wt[])
+void findWaitingTime(int n,int bt[], int wt[])
 {
     wt[0] = 0;
     for (int  i = 1; i < n ; i++ )
@@ -10,20 +9,19 @@ void findWaitingTime(int processes[], int n,
 }
    
 
-void findTurnAroundTime( int processes[], int n, 
-                  int bt[], int wt[], int tat[])
+void findTurnAroundTime(int n, int bt[], int wt[], int tat[])
 {
     for (int  i = 0; i < n ; i++)
         tat[i] = bt[i] + wt[i];
 }
    
 
-void findavgTime( int processes[], int n, int bt[])
+void findavgTime(int n, int bt[])
 {
     int wt[n], tat[n], total_wt = 0, total_tat = 0;
    
-    findWaitingTime(processes, n, bt, wt);
-    findTurnAroundTime(processes, n, bt, wt, tat);
+    findWaitingTime(n, bt, wt);
+    findTurnAroundTime(n, bt, wt, tat);
     printf("Processes   Burst time   Waiting time   Turn around time\n");
     for (int  i=0; i<n; i++)
     {
@@ -34,26 +32,25 @@ void findavgTime( int processes[], int n, int bt[])
         printf("            %d",wt[i] );
         printf("                %d\n",tat[i] );
     }
-    int s=(float)total_wt / (float)n;
-    int t=(float)total_tat / (float)n;
-    printf("Average waiting time = %d",s);
+    float s=total_wt / n;
+    float t=total_tat / n;
+    printf("Average waiting time = %f",s);
     printf("\n");
-    printf("Average turn around time = %d \n ",t);
+    printf("Average turn around time = %f \n ",t);
 }
    
 int main()
 {   int size,i;
-    printf("Enter the number of processes ");
+    printf("\nEnter the number of processes ");
     scanf("%d",&size);
     int processes[size],burst_time[size];
     printf("\nConsidering Arrival time for all the processes to be zero\n");
     printf("Enter the burst time for processes:\n");
     for(i=0;i<size;i++){
-        printf("P%d:",i+1);
+        printf("P%d: ",i+1);
         scanf("%d",&burst_time[i]);
-        printf("\n");
     }
    
-    findavgTime(processes, size,  burst_time);
+    findavgTime(size,  burst_time);
     return 0;
 }
