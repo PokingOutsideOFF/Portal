@@ -2,7 +2,7 @@
 { 
   display: inline-block;
   font-family: 'M PLUS Code Latin',sans-serif;
-  color: black;
+  color: #286DA8;
   font-size: 50px;
   font-weight:bold;
   padding-left: 450px ; 
@@ -12,14 +12,14 @@
 }
 
 .topnav{
-    background-color: #45B3E6;
     overflow: hidden;
+  background-color: #f2f2f3;
 }
 .topnav a {
     font-size: 25px;
     float: left;
     display:block;
-    color: black;
+    color: gray;
     text-align: center;
     padding: 10px 0px; 
     padding-right: 100px ;
@@ -28,20 +28,21 @@
   }
 .topnav a:hover 
 {
-    background-color: #189AB4;
-    color: white;
+    background-color: darkgray;
+    color: black;
 }
 
 .topnav a.active {
-    background-color:#04AA6D;
+    background-color:#0A758F;
     color: white;
   }
 
-.button   
+
+.button  
 {
-   background-color: #45B3E6;
+   background-color: white;
     border: none;
-    color: black;
+    color: gray;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -51,11 +52,11 @@
     margin: 4px 2px;
     cursor:pointer;
     border-radius: 50px;   
-}
+} 
   
 .button:hover
 {
-    background-color: #189AB4;
+    background-color: darkgray;
     color: black;
 }
   
@@ -68,7 +69,7 @@
     z-index: 1;
     top: 201px;
     left: 8px;
-    background-color:#04AA6D;
+    background-color:#0A758F;
     overflow-x: hidden;
 }
 
@@ -76,12 +77,12 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: black;
+    color: white;
     display: block;
 }
 
 .sidenav a:hover {
-    color: white;
+    color: black;
   }
 
 .middle{

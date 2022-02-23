@@ -1,0 +1,113 @@
+.header
+{ 
+  display: inline-block;
+  font-family: 'M PLUS Code Latin',sans-serif;
+  color: #286DA8;
+  font-size: 50px;
+  font-weight:bold;
+  padding-left: 450px ; 
+  padding-right: 250px;
+  position: relative;
+  
+}
+
+.topnav{
+    overflow: hidden;
+  background-color: #f2f2f3;
+}
+.topnav a {
+    font-size: 25px;
+    float: left;
+    display:block;
+    color: gray;
+    text-align: center;
+    padding: 10px 0px; 
+    padding-right: 100px ;
+    padding-left: 100px;
+    text-decoration:none;
+  }
+.topnav a:hover 
+{
+    background-color: darkgray;
+    color: black;
+}
+
+.topnav a.active {
+    background-color:#0A758F;
+    color: white;
+  }
+
+
+.button  
+{
+   background-color: white;
+    border: none;
+    color: gray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    font-family: "Praise";
+    margin: 4px 2px;
+    cursor:pointer;
+    border-radius: 50px;   
+} 
+  
+.button:hover
+{
+    background-color: darkgray;
+    color: black;
+}
+
+.sidenav{
+    text-align: center;
+    width:200px;
+    height: max-content;
+    position: sticky;
+    float: left;
+    z-index: 1;
+    top: 201px;
+    left: 8px;
+    background-color:#0A758F;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: black;
+  }
+
+  
+.middle{
+    
+    margin-left: 210px;
+    
+    padding: 0px 10px;
+    z-index: 1;
+    
+}
+.middle p{
+    font: 200 18px/28px artifakt-element,sans-serif;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%
+} 
+
+sup{
+    vertical-align: top; font-size: 0.6em;
+}
+
+
+

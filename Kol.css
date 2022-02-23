@@ -3,7 +3,8 @@
 { 
   display: inline-block;
   font-family: 'M PLUS Code Latin',sans-serif;
-  color: black;
+  /* color: black; */
+  color: #286DA8;
   font-size: 50px;
   font-weight:bold;
   padding-left: 450px ; 
@@ -13,9 +14,11 @@
 
 .button 
 {
-  background-color: #45B3E6;
+  /* background-color: #45B3E6; */
+  background-color: white;
   border: none;
-  color: black;
+  /* color: black; */
+  color: gray;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -29,21 +32,21 @@
 
 .button:hover
 {
-  background-color: #189AB4;
-    color: white;
+  background-color: darkgray;
+  color:black;
 }
 
 .topnav 
 {
   overflow: hidden;
-  background-color: #45B3E6;
+  background-color: #f2f2f3;
 }
 
 .topnav a 
 { font-size: 25px;
   float: left;
   display:block;
-  color: black;
+  color: gray;
   text-align: center;
   padding: 10px 30px; 
   padding-right: 100px ;
@@ -53,12 +56,12 @@
 
 .topnav a:hover 
 {
-  background-color: #189AB4;
-  color: white;
+  background-color: darkgray;
+  color: black;
 }
 
 .topnav a.active {
-  background-color:#04AA6D;
+  background-color:#0A758F;
   color: white;
 }
 
@@ -71,20 +74,21 @@
 .column-left
 {   
   font: 200 18px/28px artifakt-element,sans-serif;
-  background-color: rgba(255, 255, 255, 0.651);
-  color: black;
+  background-color: #0A758F;
+  color: white;
   margin-top: 20px;
   margin-right: 100px;
   float: left;
   width: 65%;
-  border-radius: 50px
 }
 .column-right
 {
   font: 200 18px/28px artifakt-element,sans-serif;
-  background-color: #75E6DA;
-  color:black;
+  background-color: #0A758F;
+  color:white;
   margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   float: left;
   width: 23%;
   border-radius: 50px

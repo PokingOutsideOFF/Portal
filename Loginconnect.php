@@ -23,6 +23,6 @@ if (($flag == false))
         die();
     }
 ?>
-<br>Click for the <a href="Homepage1.html">Home Page.</a>
+<br>Click for the <a href="Homepage.html">Home Page.</a>
 </body>
 </html>
