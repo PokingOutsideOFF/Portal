@@ -1,9 +1,13 @@
+<?php 
+ session_start();
+?>
+
 <html>
 <body>
 <?php
 include_once("connect.php");
-$txtname = $_POST['username'];
-$txtpass = $_POST['password'];
+$txtname = $_POST['usrnm'];
+$txtpass = $_POST['psw'];
 $flag = false;
 $sql = "SELECT Username, Authenticate FROM profile";
 $users = mysqli_query($conn, $sql);
@@ -12,17 +16,18 @@ foreach($users as $user)
 {
     if(($user['Username'] == $txtname) && ($user['Authenticate'] == $txtpass))
     {
-        echo "Successfully logged in.Head to the homepage";
         $flag = true;
+        session_start();
+        $_SESSION['status'] = "active";
+        header("Location:Homepage.html");
         break;
     }
 }
 if (($flag == false))
     {
-        echo "Wrong username or password. Try again";
-        die();
+        header("Location:Login.html");
+        echo '<script language="javascript">window.alert("Wrong username or password")</script>';
     }
 ?>
-<br>Click for the <a href="Homepage.html">Home Page.</a>
 </body>
 </html>

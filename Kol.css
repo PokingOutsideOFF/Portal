@@ -1,4 +1,3 @@
-
 .header
 { 
   display: inline-block;
@@ -9,6 +8,7 @@
   font-weight:bold;
   padding-left: 450px ; 
   padding-right: 250px;
+  margin-top: 30px;
   
 }
 
@@ -40,6 +40,7 @@
 {
   overflow: hidden;
   background-color: #f2f2f3;
+  margin-top: 20px;
 }
 
 .topnav a 
@@ -84,7 +85,7 @@
 .column-right
 {
   font: 200 18px/28px artifakt-element,sans-serif;
-  background-color: #0A758F;
+  background-color: #0a758f;
   color:white;
   margin-top: 20px;
   padding-left: 10px;
@@ -107,3 +108,33 @@ body
 sup{
   vertical-align: top; font-size: 0.6em;
 } 
+
+.Footer{
+  margin-top: 1050px;
+  background-color: #0A758F;
+}
+
+.row{
+  color:white;
+}
+
+.social-links{
+  font-size: 50px;
+}
+
+.bi-instagram {
+  color: #e84396;
+  margin-right: 30px;
+}
+
+.bi-globe {
+  color: #0097e6;
+  margin-right: 30px;
+}
+
+.bi-linkedin {
+  /*color: #176e9c;*/
+    color: #0097e6;
+  
+}
+

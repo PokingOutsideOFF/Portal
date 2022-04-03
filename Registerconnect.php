@@ -3,17 +3,18 @@
 <?php
 include_once("connect.php");
 $txtEmail = $_POST['email'];
-$txtname = $_POST['Username'];
-$txtpass = $_POST['Password'];
+$txtname = $_POST['usrnm'];
+$txtpass = $_POST['psw'];
+$txtquali = $_POST['quali'];
+$txtcity = $_POST['city'];
 try
 {
-    $sql="INSERT INTO profile (Email, Username, Authenticate) 
-    VALUES ('$txtEmail', '$txtname', '$txtpass')";
+    $sql="INSERT INTO profile (Email, Username, Authenticate, Qualification, City) 
+    VALUES ('$txtEmail', '$txtname', '$txtpass', '$txtquali', '$txtcity')";
     $rs=mysqli_query($conn,$sql);
     if($rs)
-    {
-        $var = "Profile created\nHead to the login page to access the profile\n";
-        echo $var;
+    { 
+        header("Location:Login.html");
     }
 }
 catch(Exception $e)
@@ -22,6 +23,5 @@ catch(Exception $e)
     echo $e;
 }
 ?>
-<br>Click here for <a href="login.html">login page.</a>
 </body>
 </html>

@@ -1,4 +1,5 @@
 <?php
+$_SESSION = array();
 $servername = "localhost";
 $database = "userinfo";
 $username = "root";

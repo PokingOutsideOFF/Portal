@@ -67,7 +67,7 @@
     position: sticky;
     float: left;
     z-index: 1;
-    top: 201px;
+    top: 150px;
     left: 8px;
     background-color:#0A758F;
     overflow-x: hidden;
@@ -108,5 +108,33 @@ sup{
     vertical-align: top; font-size: 0.6em;
 }
 
-
+.Footer{
+    margin-top: 200px;
+    background-color: #0A758F;
+  }
+  
+  .row{
+    color:white;
+  }
+  
+  .social-links{
+    font-size: 50px;
+  }
+  
+  .bi-instagram {
+    color: #e84396;
+    margin-right: 30px;
+  }
+  
+  .bi-globe {
+    color: #0097e6;
+    margin-right: 30px;
+  }
+  
+  .bi-linkedin {
+    /*color: #176e9c;*/
+      color: #0097e6;
+    
+  }
+  
 
