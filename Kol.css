@@ -14,10 +14,8 @@
 
 .button 
 {
-  /* background-color: #45B3E6; */
   background-color: white;
   border: none;
-  /* color: black; */
   color: gray;
   padding: 15px 32px;
   text-align: center;
@@ -25,7 +23,8 @@
   display: inline-block;
   font-size: 22px;
   font-family: "Praise";
-  margin: 4px 2px;
+  margin-bottom: 6px;
+  margin-left: 100px;
   cursor:pointer;
   border-radius: 50px;   
 }
@@ -50,8 +49,8 @@
   color: gray;
   text-align: center;
   padding: 10px 30px; 
-  padding-right: 100px ;
-  padding-left: 100px;
+  padding-right: 83px ;
+  padding-left: 83px;
   text-decoration:none;
 }
 

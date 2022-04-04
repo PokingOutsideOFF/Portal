@@ -5,6 +5,7 @@
 <html>
 <body>
 <?php
+
 include_once("connect.php");
 $txtname = $_POST['usrnm'];
 $txtpass = $_POST['psw'];
@@ -17,8 +18,8 @@ foreach($users as $user)
     if(($user['Username'] == $txtname) && ($user['Authenticate'] == $txtpass))
     {
         $flag = true;
-        session_start();
-        $_SESSION['status'] = "active";
+        $_SESSION["status"] = "active";
+        $_SESSION['usrname'] = $txtname;
         header("Location:Homepage.html");
         break;
     }
