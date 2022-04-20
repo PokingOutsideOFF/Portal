@@ -8,8 +8,8 @@
 
 .Register-btn
 {
-   background: #286DA8;
-   border:#286DA8;
+   background: red;
+   border:white;
    padding: 15px 20px;
    width: 100%;
    border: none;
@@ -57,3 +57,38 @@
    padding: 10px;
    outline: none;
  }
+
+ .Footer{
+   margin-top: 200px;
+   background-color: #0A758F;
+   width: 1550px;
+ }
+ 
+ .row{
+   color:white;
+ }
+ 
+ .social-links{
+   display: inline-block;
+ }
+ 
+ .bi-instagram {
+   color: #e84396;
+   margin-right: 30px;
+   font-size: 50px;
+   margin-left: 1200px;
+ }
+ 
+ .bi-globe {
+   color: #0097e6;
+   margin-right: 30px;
+   font-size: 50px;
+ }
+ 
+ .bi-linkedin {
+     color: #0097e6;
+     font-size: 50px;
+   
+ }
+ 
+ 
